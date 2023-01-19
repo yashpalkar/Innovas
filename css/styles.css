@@ -1,7 +1,3 @@
-/* =============================================
-
- *
- * ============================================= */
 
 body, div,
 h1, h2, h3, h4, h5, h6,
@@ -12,6 +8,11 @@ summary, hgroup {
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+font-family:'Poppins', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color:#32346d
 }
 
 a:active,
@@ -93,7 +94,8 @@ body {
   text-size-adjust: 100%;
   color: #37302a;
   background: #fff;
-  font: normal 100%/1.4 sans-serif;
+  font: normal 100%/1.4 ;
+  font-family: 'Nunito',sans-serif;
 }
 
 section {
@@ -123,6 +125,7 @@ header {
   position: fixed;
   z-index: 3;
   width: 100%;
+  /* height: auto; */
   left: 0;
   top: 0;
 }
@@ -201,6 +204,7 @@ header {
   list-style: none;
   width: 100%;
   float: left;
+  margin: 10px 0 0 0;
 }
 
 @media screen and (min-width: 60em) {
@@ -208,47 +212,53 @@ header {
     float: right;
     width: auto;
   }
+  .nav-collapse ul{
+    margin: 0;
+  }
 }
 
 .nav-collapse li {
-  float: left;
-  width: 100%;
+  /* float: left; */
+  margin: auto;
+  width: 80%;
 }
 
 @media screen and (min-width: 60em) {
   .nav-collapse li {
+    float: left;
     width: auto;
   }
 }
 
 .nav-collapse a {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  border-top: 1px solid white;
+  border-bottom: 1px solid rgb(193, 193, 193);
   text-decoration: none;
-
-  padding: 0.7em 1em;
-  color: #00a2d3d1;
+  padding: 0.6em 0em;
+  color: #0ca0ce;
   width: 100%;
   float: left;
+  /* margin: 0px 30px 0px 30px ; */
 }
 
 .nav-collapse a:active,
 .nav-collapse .active a {
-  color: #02c4ff;
+  color: #32346d;
 }
 .nav-collapse a:hover{
-  color: #00a2d3;
+  color: #32346d;
 }
 
 @media screen and (min-width: 60em) {
   .nav-collapse a {
-    /* border-left: 1px solid white; */
-    padding: 1.02em 1.2em;
+    /* border-left: 1px solid rgb(192, 48, 48); */
+    padding: 1.6em 1.2em;
     text-align: center;
-    border-top: 0;
+    border-bottom: 0;
     float: left;
     margin: 0;
   }
+  
 }
 
 .nav-collapse ul ul a {
@@ -291,7 +301,7 @@ header {
 }
 
 .nav-toggle:before {
-  color: #fff; /* Edit this to change the icon color */
+  color: #32346d; /* Edit this to change the icon color */
   font: normal 28px/55px "responsivenav"; /* Edit font-size (28px) to change the icon size */
   text-transform: none;
   text-align: center;
@@ -301,7 +311,7 @@ header {
   speak: none;
   width: 100%;
   left: 0;
-  top: 0;
+  top: 10px;
 }
 
 .nav-toggle.active:before {
