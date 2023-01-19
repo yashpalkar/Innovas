@@ -1,18 +1,51 @@
-
-body, div,
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, dl, dt, dd, ol, ul, li, hr,
-fieldset, form, label, legend, th, td,
-article, aside, figure, footer, header, hgroup, menu, nav, section,
-summary, hgroup {
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+hr,
+fieldset,
+form,
+label,
+legend,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+hgroup {
   margin: 0;
   padding: 0;
   border: 0;
 }
 
-h1, h2, h3, h4, h5, h6{
-font-family:'Poppins', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-color:#32346d
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #32346d
 }
 
 a:active,
@@ -20,11 +53,25 @@ a:hover {
   outline: 0;
 }
 
-@-webkit-viewport { width: device-width; }
-@-moz-viewport { width: device-width; }
-@-ms-viewport { width: device-width; }
-@-o-viewport { width: device-width; }
-@viewport { width: device-width; }
+@-webkit-viewport {
+  width: device-width;
+}
+
+@-moz-viewport {
+  width: device-width;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@-o-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
 
 
 /* ------------------------------------------
@@ -62,7 +109,7 @@ a:hover {
 }
 
 .nav-toggle {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -75,9 +122,11 @@ a:hover {
   .js .nav-collapse {
     position: relative;
   }
+
   .js .nav-collapse.closed {
     max-height: none;
   }
+
   .nav-toggle {
     display: none;
   }
@@ -94,15 +143,15 @@ body {
   text-size-adjust: 100%;
   color: #37302a;
   background: #fff;
-  font: normal 100%/1.4 ;
-  font-family: 'Nunito',sans-serif;
+  font: normal 100%/1.4;
+  font-family: 'Nunito', sans-serif;
 }
 
 section {
-  border-bottom: 1px solid #999;
+  /* border-bottom: 0.1px solid #999; */
   text-align: center;
-  padding: 100px 0 0;
-  height: 800px;
+  padding: 100px 20px 0 20px;
+  height: auto;
   width: 100%;
 }
 
@@ -131,7 +180,7 @@ header {
 }
 
 .logo {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   text-decoration: none;
   font-weight: bold;
   line-height: 55px;
@@ -139,7 +188,7 @@ header {
   margin: 2px 0 0 0;
   color: #fff;
   float: left;
-  width: 145px;
+  width:170px;
   height: auto;
 }
 
@@ -152,7 +201,7 @@ header {
   -webkit-transition: opacity 300ms;
   -moz-transition: opacity 300ms;
   transition: opacity 300ms;
-  background: rgba(0,0,0, .5);
+  background: rgba(0, 0, 0, .5);
   visibility: hidden;
   position: fixed;
   opacity: 0;
@@ -212,7 +261,8 @@ header {
     float: right;
     width: auto;
   }
-  .nav-collapse ul{
+
+  .nav-collapse ul {
     margin: 0;
   }
 }
@@ -231,7 +281,7 @@ header {
 }
 
 .nav-collapse a {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   border-bottom: 1px solid rgb(193, 193, 193);
   text-decoration: none;
   padding: 0.6em 0em;
@@ -245,7 +295,8 @@ header {
 .nav-collapse .active a {
   color: #32346d;
 }
-.nav-collapse a:hover{
+
+.nav-collapse a:hover {
   color: #32346d;
 }
 
@@ -258,7 +309,7 @@ header {
     float: left;
     margin: 0;
   }
-  
+
 }
 
 .nav-collapse ul ul a {
@@ -279,8 +330,8 @@ header {
 
 @font-face {
   font-family: "responsivenav";
-  src:url("../icons/responsivenav.eot");
-  src:url("../icons/responsivenav.eot?#iefix") format("embedded-opentype"),
+  src: url("../icons/responsivenav.eot");
+  src: url("../icons/responsivenav.eot?#iefix") format("embedded-opentype"),
     url("../icons/responsivenav.ttf") format("truetype"),
     url("../icons/responsivenav.woff") format("woff"),
     url("../icons/responsivenav.svg#responsivenav") format("svg");
@@ -301,12 +352,15 @@ header {
 }
 
 .nav-toggle:before {
-  color: #32346d; /* Edit this to change the icon color */
-  font: normal 28px/55px "responsivenav"; /* Edit font-size (28px) to change the icon size */
+  color: #32346d;
+  /* Edit this to change the icon color */
+  font: normal 28px/55px "responsivenav";
+  /* Edit font-size (28px) to change the icon size */
   text-transform: none;
   text-align: center;
   position: absolute;
-  content: "\2261"; /* Hamburger icon */
+  content: "\2261";
+  /* Hamburger icon */
   text-indent: 0;
   speak: none;
   width: 100%;
@@ -316,5 +370,65 @@ header {
 
 .nav-toggle.active:before {
   font-size: 24px;
-  content: "\78"; /* Close icon */
+  content: "\78";
+  /* Close icon */
 }
+
+.alignleft {
+  text-align: left;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 200;
+  font-weight: bold;
+  font-family: 'Poppins', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+@media screen and (min-width: 60em) {
+
+  .imagesize {
+    width: 300px;
+    height: auto;
+
+  }
+
+  .clearfix {
+
+    display: flex;
+    direction: rtl;
+    display: flex;
+    flex-flow: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+  }
+  .fadein img{
+    opacity:0.7;
+    transition: 1s ease;
+    }
+    
+    .fadein img:hover{
+    opacity:1;
+    transition: 1s ease;
+    }
+
+}
+
+.grow img{
+  transition: 1s ease;
+  }
+  
+  .grow img:hover{
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+  transition: 1s ease;
+  }
+  #about_div{
+margin:10px 30px 0 30px;
+text-align: center justify;
+font-weight: 600;
+  }
