@@ -12,7 +12,7 @@
 
 .carousel-heading {
     font-size: 3rem;
-    color: #308d46;
+    color: #00a5d3;
     margin-bottom: 1rem;
 }
 
@@ -116,11 +116,11 @@
 
 /* ----- carousel control buttons stylings ----- */
 .slide-btn {
-    background-color: #bbb;
+    background-color: rgb(255, 255, 255);
     border-radius: 50%;
-    border: .2rem solid #d38800;
-    width: 1.2rem;
-    height: 1.2rem;
+    border: 1px solid #00a5d3;
+    width: 12px;
+height: 12px;
     outline: none;
     cursor: pointer;
     /* stylings for positioning the buttons at
@@ -184,6 +184,6 @@
 }
 
 /* when we focus on the button, the background color changes */
-.slide-btn:focus {
-    background-color: #308d46;
+.slide-btn:focus,.slide-btn:hover{
+    background-color: #00a5d3;
 }
