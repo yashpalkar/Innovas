@@ -115,7 +115,7 @@
 /* ----- end of slideshow stylings ----- */
 
 /* ----- carousel control buttons stylings ----- */
-.slide-btn {
+/* .slide-btn {
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
     border: 1px solid #00a5d3;
@@ -123,67 +123,73 @@
 height: 12px;
     outline: none;
     cursor: pointer;
-    /* stylings for positioning the buttons at
-           the bottom of the carousel */
+
     position: absolute;
     bottom: 1%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-}
+} */
 
 /* As we provide position as absolute, 
     the buttons places one over the other. 
     So, we have to place them individually
     at their correct positions. */
 .slide-btn-1 {
-    left: 45%;
+    left: 15%;
 }
 
 .slide-btn-2 {
-    left: 48%;
+    left: 35%;
 }
 
 .slide-btn-3 {
-    left: 51%;
+    left: 55%;
 }
 
 .slide-btn-4 {
-    left: 54%;
+    left: 75%;
 }
 
 .slide-btn-5 {
-    left: 57%
+    left: 95%
 }
 
 /* When we focus on the particular button, 
     the animation stops to that particular image 
     to which the button is associated. */
-.slide-btn-1:focus~.slideshow-wrapper {
+
+.prod-flex-tabs:hover~.slideshow-wrapper {
+    animation: none;
+}
+
+.slide-btn-1 .prod-flex-tabs:hover~.slideshow-wrapper {
     animation: none;
     left: 0;
 }
 
-.slide-btn-2:focus~.slideshow-wrapper {
+#slide-btn-2 :hover~.slideshow-wrapper {
     animation: none;
     left: -100%;
 }
 
-.slide-btn-3:focus~.slideshow-wrapper {
-    animation: none;
+.slide-btn-3:hover~.slideshow-wrapper {
+
     left: -200%;
 }
 
-.slide-btn-4:focus~.slideshow-wrapper {
+.slide-btn-4:hover~.slideshow-wrapper {
     animation: none;
     left: -300%;
 }
-.slide-btn-5:focus~.slideshow-wrapper {
+
+.slide-btn-5:hover~.slideshow-wrapper {
     animation: none;
     left: -400%;
 }
 
 /* when we focus on the button, the background color changes */
-.slide-btn:focus,.slide-btn:hover{
+.slide-btn:focus,
+.slide-btn:hover {
     background-color: #00a5d3;
 }
