@@ -8,120 +8,129 @@
     <title>Document</title>
     <!-- <link rel="stylesheet" href="css/styles.css"> -->
     <style>
-        body {
-            margin-top: 30px;
+        .project-column {
+            flex-basis: 100%;
         }
 
-        .prod-tab {
-            display: flex;
-            margin: 0em;
-            vertical-align: top;
-            cursor: hand;
-            cursor: pointer;
-            justify-content: center;
-            text-align: center;
-            padding: 20px 0px;
-            font-weight: bold;
-            color: #545354;
-            border-bottom: 5px solid rgb(178, 178, 178);
-            flex-grow: 1;
-            max-height: 40px;
-            text-align: center;
-            /* border-bottom: 10px solid rgb(224, 126, 126); */
+        @media screen and (min-width: 60em) {
 
-            /* &:hover{
-          background-color: #fff;
-        } */
+            .project-row {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+
+            /* .project-column {
+
+                border: 1px solid #666;
+                margin: 5px 5px;
+                background: #33333569;
+                display: flex;
+                flex-direction: row;
+
+            } */
         }
 
-        .tab:active,
-        .tab:hover {
-            border-bottom: 5px solid rgb(224, 126, 126);
+        @media screen and (min-width: 75em) {
+
+
+            .project-column {
+
+                border: 1px solid #666;
+                margin: 5px 5px;
+                background: #33333569;
+                display: flex;
+                flex-direction: row;
+
+            }
+            .image-size{
+                width: 100%;
+                height: 50%;
+            }
         }
 
-        .prod-flex-tabs {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: 0em 10em;
+        .project-column {
 
+            border: 1px solid #666;
+            margin: 5px 5px;
+            background: #33333569;
+            /* display: flex;
+            flex-direction: row; */
 
         }
 
-
-        .panel {
-            background-color: #fff;
+        .project_conent {
             padding: 20px;
-            min-height: 300px;
-            display: none;
-            /* width: 100%; */
-            flex-basis: auto;
         }
-
-        @media (max-width: 600px) {
-            .prod-flex-tabs{
-                flex-direction: column;
-
-
-            }
-
-            .tab {
-                background: #fff;
-                border-bottom: 1px solid #ccc;
-                text-align: center;
-
-                /* &:last-of-type {
-                        border-bottom: none;
-                    } */
-            }
-        }
-
-
     </style>
 </head>
 
 <body>
 
-<div>
-    <ul class="prod-flex-tabs">
-        <li class="prod-tab">Element</li>
-        <li class="prod-tab">EXplia</li>
-        <li class="prod-tab">Praesenti</li>
-        <li class="prod-tab">Nostrum</li>
-        <li class="prod-tab">Modislt</li>
-</ul>
-
-</div>
-<div style="height: 40px;"></div>
-    <div class="tabs flex-tabs">
-        <label for="tab-one" id="tab-one-label" class="tab"><a>MOSITA</a>/label>
-        <label for="tab-two" id="tab-two-label" class="tab">Tab Two</label>
-        <label for="tab-three" id="tab-three-label" class="tab">Tab Three</label>
-        <label for="tab-four" id="tab-four-label" class="tab">Tab Four</label>
-
-        </section>
-
-
-
-
-        <div class="row">
-            <div class="column" style="background-color:#aaa;">
-              <h2>Column 1</h2>
-              <p>Some text..</p>
+    <div class="project-row">
+        <div class="project-column">
+            <div class="image-size">
+                <img class="" src="assets/img/hvac_img3.png" alt="Innovas" style="width: 400px; height: 100%;">
             </div>
-            <div class="column" style="background-color:#bbb;">
-              <h2>Column 2</h2>
-              <p>Some text..</p>
+            <div class="project_conent" id="">
+
+                <h3>HVAC SYSTEM</h3>
+                <p>HVAC - CLEAN ROOM HVAC designs involve knowledge of regulations, cleanliness level guidelines,
+                    airflow, room pressurisation, temperature control, humidity control, room pressure control and
+                    accounting of activities taking place inside. We have expertise HVAC across major segments like
+                    Pharma, Medical Devices, Herbals, Health Cosmetics & food. </p>
             </div>
-              <div class="column" style="background-color:#bbb;">
-              <h2>Column 2</h2>
-              <p>Some text..</p>
+        </div>
+        <div class="project-column">
+            <div>
+                <img class="" src="assets/img/hvac_img3.png" alt="Innovas" style="width: 400px; height: 100%;">
             </div>
-                <div class="column" style="background-color:#bbb;">
-              <h2>Column 2</h2>
-              <p>Some text..</p>
+            <div class="project_conent" id="">
+
+
+                <h3>HVAC SYSTEM</h3>
+                <p>HVAC - CLEAN ROOM HVAC designs involve knowledge of regulations, cleanliness level guidelines,
+                    airflow, room pressurisation, temperature control, humidity control, room pressure control and
+                    accounting of activities taking place inside. We have expertise HVAC across major segments like
+                    Pharma, Medical Devices, Herbals, Health Cosmetics & food. </p>
             </div>
-          </div>
+        </div>
+    </div>
+    <div class="project-row">
+        <div class="project-column">
+            <div>
+                <img class="" src="assets/img/hvac_img3.png" alt="Innovas" style="width: 400px; height: 100%;">
+            </div>
+            <div class="project_conent" id="">
+
+
+                <h3>HVAC SYSTEM</h3>
+                <p>HVAC - CLEAN ROOM HVAC designs involve knowledge of regulations, cleanliness level guidelines,
+                    airflow, room pressurisation, temperature control, humidity control, room pressure control and
+                    accounting of activities taking place inside. We have expertise HVAC across major segments like
+                    Pharma, Medical Devices, Herbals, Health Cosmetics & food. </p>
+            </div>
+        </div>
+        <div class="project-column">
+            <div>
+                <img class="" src="assets/img/hvac_img3.png" alt="Innovas" style="width:400px; height: 100%;">
+            </div>
+            <div class="project_conent" id="">
+
+
+                <h3>HVAC SYSTEM</h3>
+                <p>HVAC - CLEAN ROOM HVAC designs involve knowledge of regulations, cleanliness level guidelines,
+                    airflow, room pressurisation, temperature control, humidity control, room pressure control and
+                    accounting of activities taking place inside. We have expertise HVAC across major segments like
+                    Pharma, Medical Devices, Herbals, Health Cosmetics & food. </p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
 </body>
 
 </html>
