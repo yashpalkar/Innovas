@@ -625,7 +625,7 @@ color: white;
     display: flex;
     flex-flow: wrap;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 
 
 
@@ -658,10 +658,12 @@ color: white;
     transition: 1s ease;
   }
 
-  #abt_content,
+  #abt_content,#proj-conent{
+    max-width: 60%;
+  }
   #prod_content {
     /* background-color: #0ca0ce; */
-    max-width: 60%;
+    max-width: 70%;
     
   }
 
@@ -816,8 +818,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-
-
 }
 
 #prodct_slider {
@@ -837,8 +837,8 @@ img {
 }
 
 .product_item {
-  background-color: azure;
-  border: 1px solid #2E95C0;
+  /* background-color: azure;
+  border: 1px solid #2E95C0; */
   margin-bottom: 30px;
 
 }
@@ -1059,8 +1059,6 @@ background-color: #fff;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0em 10em;
-
-
 }
 
 
@@ -1072,11 +1070,6 @@ background-color: #fff;
   /* width: 100%; */
   flex-basis: auto;
 }
-
-
-
-
-
 
 @media screen and (min-width: 60em) {
   #prodct_slider {
@@ -1094,7 +1087,43 @@ background-color: #fff;
     margin-left: 20px;
     padding-left: 20px;
   }
+}
 
+/* Project */
 
+/* Create two equal columns that floats next to each other */
+.projects-column {
+  float: left;
+margin: 10px;
+  padding: 10px;
+  justify-content: space-around;
+  align-items:center ;
+  background-color: #2596be;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
 
+.projects-row{
+  background-color: #ececec;
+}
+/* Clear floats after the columns */
+.projects-row:after {
+  content: "";
+  display: flex;
+  clear: both;
+}
+.project-item{
+  display: flex;
+  justify-content: center;
+
+}
+#hvac_project
+{display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+@media screen and (min-width: 60em) {
+  .projects-column{
+width: 45%;
+  }
 }

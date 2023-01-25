@@ -22,6 +22,7 @@
 .slideshow {
     height: 100%;
     overflow: hidden;
+    padding: 0 0 100px 0;
     /* to hide slides in x-direction */
     position: relative;
 }
@@ -34,6 +35,7 @@
            5 images carousel, then give width as 500%. */
     width: 500%;
     height: 100%;
+    margin-top: 50px;
     position: relative;
     margin-bottom: 2px;
     /* you can change the animation settings from below */
@@ -135,7 +137,7 @@ height: 12px;
     the buttons places one over the other. 
     So, we have to place them individually
     at their correct positions. */
-.slide-btn-1 {
+/* .slide-btn-1 {
     left: 15%;
 }
 
@@ -153,28 +155,28 @@ height: 12px;
 
 .slide-btn-5 {
     left: 95%
-}
+} */
 
 /* When we focus on the particular button, 
     the animation stops to that particular image 
     to which the button is associated. */
 
-.prod-flex-tabs:hover~.slideshow-wrapper {
+/* .prod-flex-tabs:hover~.slideshow-wrapper {
     animation: none;
-}
+} */
 
-.slide-btn-1 .prod-flex-tabs:hover~.slideshow-wrapper {
+.slide-btn-1:hover~.slideshow-wrapper {
     animation: none;
     left: 0;
 }
 
-#slide-btn-2 :hover~.slideshow-wrapper {
+.slide-btn-2:hover~.slideshow-wrapper {
     animation: none;
     left: -100%;
 }
 
 .slide-btn-3:hover~.slideshow-wrapper {
-
+    animation: none;
     left: -200%;
 }
 
@@ -192,4 +194,23 @@ height: 12px;
 .slide-btn:focus,
 .slide-btn:hover {
     background-color: #00a5d3;
+}
+
+.slider-button{
+    
+    margin: 0px 0 100px 0px;
+    padding: 0px 50px 15px 50px;
+    border-bottom: 4px solid #e2e4e6;
+}
+.slider-button:hover, .slider-button:active{
+    border-bottom: 4px solid #00a5d3;
+    color: #00a5d3;
+}
+#wrap-product h2{
+    margin-bottom: 50px;
+}
+#prodct_slider a{
+font-weight: bold;
+font-size:large ;
+width: 20%;
 }
