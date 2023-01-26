@@ -8,129 +8,33 @@
     <title>Document</title>
     <!-- <link rel="stylesheet" href="css/styles.css"> -->
     <style>
-        .project-column {
-            flex-basis: 100%;
+        #more {display: none;}
+        </style>
+        </head>
+        <body>
+        
+        <h2>Read More Read Less Button</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+        <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
         }
-
-        @media screen and (min-width: 60em) {
-
-            .project-row {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-            }
-
-            /* .project-column {
-
-                border: 1px solid #666;
-                margin: 5px 5px;
-                background: #33333569;
-                display: flex;
-                flex-direction: row;
-
-            } */
-        }
-
-        @media screen and (min-width: 75em) {
-
-
-            .project-column {
-
-                border: 1px solid #666;
-                margin: 5px 5px;
-                background: #33333569;
-                display: flex;
-                flex-direction: row;
-
-            }
-            .image-size{
-                width: 100%;
-                height: 50%;
-            }
-        }
-
-        .project-column {
-
-            border: 1px solid #666;
-            margin: 5px 5px;
-            background: #33333569;
-            /* display: flex;
-            flex-direction: row; */
-
-        }
-
-        .project_conent {
-            padding: 20px;
-        }
-    </style>
-</head>
-
-<body>
-
-    <div class="project-row">
-        <div class="project-column">
-            <div class="image-size">
-                <img class="" src="assets/img/hvac_img3.png" alt="Innovas" style="width: 400px; height: 100%;">
-            </div>
-            <div class="project_conent" id="">
-
-                <h3>HVAC SYSTEM</h3>
-                <p>HVAC - CLEAN ROOM HVAC designs involve knowledge of regulations, cleanliness level guidelines,
-                    airflow, room pressurisation, temperature control, humidity control, room pressure control and
-                    accounting of activities taking place inside. We have expertise HVAC across major segments like
-                    Pharma, Medical Devices, Herbals, Health Cosmetics & food. </p>
-            </div>
-        </div>
-        <div class="project-column">
-            <div>
-                <img class="" src="assets/img/hvac_img3.png" alt="Innovas" style="width: 400px; height: 100%;">
-            </div>
-            <div class="project_conent" id="">
-
-
-                <h3>HVAC SYSTEM</h3>
-                <p>HVAC - CLEAN ROOM HVAC designs involve knowledge of regulations, cleanliness level guidelines,
-                    airflow, room pressurisation, temperature control, humidity control, room pressure control and
-                    accounting of activities taking place inside. We have expertise HVAC across major segments like
-                    Pharma, Medical Devices, Herbals, Health Cosmetics & food. </p>
-            </div>
-        </div>
-    </div>
-    <div class="project-row">
-        <div class="project-column">
-            <div>
-                <img class="" src="assets/img/hvac_img3.png" alt="Innovas" style="width: 400px; height: 100%;">
-            </div>
-            <div class="project_conent" id="">
-
-
-                <h3>HVAC SYSTEM</h3>
-                <p>HVAC - CLEAN ROOM HVAC designs involve knowledge of regulations, cleanliness level guidelines,
-                    airflow, room pressurisation, temperature control, humidity control, room pressure control and
-                    accounting of activities taking place inside. We have expertise HVAC across major segments like
-                    Pharma, Medical Devices, Herbals, Health Cosmetics & food. </p>
-            </div>
-        </div>
-        <div class="project-column">
-            <div>
-                <img class="" src="assets/img/hvac_img3.png" alt="Innovas" style="width:400px; height: 100%;">
-            </div>
-            <div class="project_conent" id="">
-
-
-                <h3>HVAC SYSTEM</h3>
-                <p>HVAC - CLEAN ROOM HVAC designs involve knowledge of regulations, cleanliness level guidelines,
-                    airflow, room pressurisation, temperature control, humidity control, room pressure control and
-                    accounting of activities taking place inside. We have expertise HVAC across major segments like
-                    Pharma, Medical Devices, Herbals, Health Cosmetics & food. </p>
-            </div>
-        </div>
-
-    </div>
-
-
-
-
-</body>
-
-</html>
+        </script>
+        
+        </body>
+        </html>
