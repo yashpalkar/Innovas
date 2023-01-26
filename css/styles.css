@@ -230,8 +230,16 @@ body {
   padding-top: 50px;
   width: 100%;
 }
+#product{
+  /* height: 100vh; */
+  color:#fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Innovas/assets/img/product_background.png');
+}
 
-h1 {
+#wrap-product h2{
+  color:#fff;
+}
+#home_content h1 {
   margin-bottom: .5em;
 }
 
@@ -263,7 +271,7 @@ p {
   text-decoration: none;
   font-weight: bold;
   line-height: 55px;
-  padding: 5px 10px 0 10px;
+  padding: 5px 10px 5px 10px;
   margin: 2px 0 0 0;
   color: #fff;
   float: left;
@@ -303,7 +311,7 @@ p {
 
 @media screen and (min-width: 60em) {
   .logo {
-    padding: 5px 10px 0 20px;
+    padding: 5px 10px 10px 20px;
     width: 200px;
   }
 
@@ -524,10 +532,11 @@ p {
 }
 
 #about_div {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Innovas/assets/img/construction-1.jpg');
   margin: 10px 00px 0 30px;
   text-align: center justify;
   font-weight: 600;
-  background-color: #f5f6f7;
+  /* background-color: #f5f6f7; */
 }
 
 .dir-ltr {
@@ -869,6 +878,8 @@ img {
 
 .footer-distributed {
   background: #666;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/Innovas/assets/img/product_background.png');
+
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -924,7 +935,7 @@ img {
 }
 
 .footer-distributed .footer-company-name {
-  color: #222;
+  color: rgb(239, 239, 239);
   font-size: 14px;
   font-weight: normal;
   margin: 0;
@@ -997,7 +1008,7 @@ img {
 
 .footer-distributed .footer-company-about {
   line-height: 20px;
-  color: #92999f;
+  color: #ededed;
   font-size: 13px;
   font-weight: normal;
   margin: 0;
@@ -1125,31 +1136,12 @@ background-color: #fff;
 
 
 
-/* @media screen and (min-width: 75em) {
 
-
-            .project-column {
-
-                border: 1px solid #666;
-                margin: 5px 5px;
-                background: #ffffff69;
-                display: flex;
-                flex-direction: row;
-
-            }
-
-            .image-size {
-                width: 100%;
-                height: 50%;
-            }
-        } */
 
 .project-column {
   border: 1px solid rgb(220, 220, 220);
   margin: 5px 5px;
   background: #ffffff69;
-  /* display: flex;
-            flex-direction: row; */
 
 }
 
@@ -1173,6 +1165,10 @@ background-color: #fff;
 .project_conent p {
   padding-top: 20px;
 }
+.project_conent h3 {
+  padding-top: 10px;
+  padding-left: 20px;
+}
 .cropped1 {
   width: 250px;
   height: 100%;
@@ -1182,12 +1178,29 @@ background-color: #fff;
   .project-column {
 
     border: 1px solid rgb(208, 208, 208);
-    margin: 5px 5px;
+    margin: 7px 7px;
     display: flex;
     flex-direction: row;
 
   }
-@media screen and (min-width: 60em) {
+  
+  @media screen and (max-width: 30em){
+
+  .project-column {
+
+    border: 1px solid rgb(208, 208, 208);
+    margin: 7px 7px;
+    display: block;
+  }
+  .cropped1 {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  
+  }
+}
+  
+@media screen and (min-width: 55em) {
 
   .project-row {
     display: flex;
@@ -1197,7 +1210,7 @@ background-color: #fff;
   .project-column {
 
     border: 1px solid rgb(208, 208, 208);
-    margin: 5px 5px;
+    margin: 7px 7px;
     display: block;
 
 
@@ -1208,6 +1221,12 @@ background-color: #fff;
     height: 300px;
     object-fit: cover;
   
+  }
+  .margin-v-20{
+    margin: 0 20px 0 20px;
+  }
+  .padding-20{
+    padding: 0 30px 0 30px;
   }
 }
 
@@ -1220,7 +1239,7 @@ background-color: #fff;
   .project-column {
 
     border: 1px solid rgb(208, 208, 208);
-    margin: 5px 5px;
+    margin: 13px 13px;
     display: flex;
     flex-direction: row;
 
@@ -1231,18 +1250,35 @@ background-color: #fff;
     object-fit: cover;
 
   }
-.project-column:hover{
-  height: max-content;
+.project-column-left:hover{ 
+  /* height: max-content;
   width: 800px;
 
-  transform: translate(-45px, 0px);
+  transform: translate(-45px, 0px); */
+
+  background-color: #f4f4f4;
 }
+.project-column-right:hover{
+  /* height: max-content;
+  width: 800px; */
+
+  /* transform: translate(45px, 0px); */
+  background-color: #f5f6f7
+} 
   .project_conent p {
     padding-top: 20px;
   }
-  .project_conent h3 {
-    padding-top: 10px;
+
+  .margin-v-20{
+    margin: 0 20px 0 20px;
+  }
+  .padding-20{
+    padding: 0 30px 0 30px;
   }
   
 }
+.margin-h-20{
+margin: 20px 0 20px 0;
+}
 
+/* end of project section */
