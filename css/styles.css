@@ -841,6 +841,7 @@ img {
 .content h5 {
   text-align: left;
   margin: 100px 0 0 40px;
+  color:rgb(234, 234, 234);
 }
 
 .content ul {
@@ -889,7 +890,7 @@ img {
   width: 100%;
   text-align: left;
   font: bold 14px sans-serif;
-  padding: 55px 50px;
+  padding: 30px 50px;
 }
 
 .footer-logo {
