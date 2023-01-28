@@ -841,6 +841,7 @@ img {
 .content h5 {
   text-align: left;
   margin: 100px 0 0 40px;
+  color:rgb(234, 234, 234);
 }
 
 .content ul {
@@ -889,7 +890,7 @@ img {
   width: 100%;
   text-align: left;
   font: bold 14px sans-serif;
-  padding: 55px 50px;
+  padding: 30px 50px;
 }
 
 .footer-logo {
@@ -982,6 +983,7 @@ img {
   font-weight: normal;
   font-size: 14px;
   line-height: 2;
+  padding-top: 30px;
 }
 
 .footer-distributed .footer-center p a {
@@ -1008,6 +1010,7 @@ img {
 
 .footer-distributed .footer-right {
   width: 20%;
+  padding-top: 30px;
 }
 
 .footer-distributed .footer-company-about {
@@ -1158,7 +1161,8 @@ background-color: #fff;
 #more5,
 #more2,
 #more4,
-#more6 {
+#more6,
+#more7 {
   display: none;
 }
 
