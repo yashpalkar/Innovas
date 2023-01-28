@@ -22,7 +22,7 @@
 .slideshow {
     height: 100%;
     overflow: hidden;
-    padding: 0 0 100px 0;
+    padding: 0 0 30px 0;
     /* to hide slides in x-direction */
     position: relative;
 }
