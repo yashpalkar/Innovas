@@ -55,9 +55,10 @@
     left: 0;
     -webkit-transform: rotateY(180deg);
     text-align: center;
-    font-size: 18px;
+    font-size: 12px;
     font-family: "Poppins", sans-serif;
     color: rgb(121, 121, 121);
+
   }
   
   .back h3 {
