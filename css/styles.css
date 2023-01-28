@@ -983,6 +983,7 @@ img {
   font-weight: normal;
   font-size: 14px;
   line-height: 2;
+  padding-top: 30px;
 }
 
 .footer-distributed .footer-center p a {
@@ -1009,6 +1010,7 @@ img {
 
 .footer-distributed .footer-right {
   width: 20%;
+  padding-top: 30px;
 }
 
 .footer-distributed .footer-company-about {
