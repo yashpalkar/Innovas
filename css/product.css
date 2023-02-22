@@ -38,10 +38,12 @@
     padding: 20px;
     border: 1px solid #888;
     width: 90%;
+    height:100%;
+    overflow:scroll;
 
 }
 .popup-content p{
-    font-size: 17px;
+    font-size: 14px;
     padding: 10px;
     line-height: 20px;
 }
@@ -90,83 +92,50 @@
   transform: scale(1);
 } 
 
-
-
-#prod-content{
-  background-color: #f1f1f1;
+.prod-content{
+  padding: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
   margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-  flex:2;
-}
-#prod-image {
-  background-color: #f1f1f1;
-  margin: 10px;
-
-  font-size: 30px;
-	flex:3;
-}
-
-.test{
-  /* display: flex; */
-}
-/* .popup-container h3{
-  margin:10px;
-}
-
-
-
-.popup-style-3{
-  left:100%;
   
 }
 
-.popup-style-3:target{
-  left:0;
-}
 
-.popup-style-4{
-  transform: rotate(180deg);
-}
 
-.popup-style-4:target{
-  transform: rotate(0deg);
-}
 
-.popup-style-5{
-  top:100%;
-  
-}
 
-.popup-style-5:target{
-  top:0;
-}
-
-.popup-style-6{
-  transform: scale(15.3);
-  
-}
-
-.popup-style-6:target{
- transform: scale(1);
- }
-
-.popup-style-7{
-  transform: skewY(180deg);
-   transition: all 0.7s ease-in-out;
-}
-
-.popup-style-7:target{
- transform: skewY(0deg);
-
- } */
-
- @media screen and (min-width: 50em){
+ @media screen and (min-width: 65em){
   .popup-content {
 display: flex;
+background-color: #fefefe;
+margin: auto;
+padding: 20px;
+border: 1px solid #888;
+width: 90%;
+height: 65%;
 
 }
 .test{
   display: flex;
+}
+.prod-content{
+  background-color: #f1f1f1;
+  flex:2;
+  margin: 10px;
+  font-size: 16px;
+  overflow: scroll;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+.prod-content ul{
+  font-size: 14px;
+}
+#prod-image {
+ 
+  margin: 10px;
+  font-size: 30px;
+	flex:3;
 }
  }
