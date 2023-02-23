@@ -234,7 +234,7 @@ body {
 #product{
   /* height: 100vh; */
   color:#fff;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/product_background.png');
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/product_background.png'); */
 }
 
 #wrap-product h2{
@@ -440,8 +440,9 @@ p {
   .nav-collapse ul ul a {
     display: none;
   }
-}
 
+  
+}
 
 /* ------------------------------------------
   NAV TOGGLE STYLES
@@ -840,7 +841,7 @@ img {
 .content h4,
 .content h5 {
   text-align: left;
-  margin: 100px 0 0 40px;
+  margin: 10px 0 0 40px;
   color:rgb(234, 234, 234);
 }
 
@@ -1128,11 +1129,7 @@ background-color: #fff;
     height: 100%;
   }
 
-  #abt_content ul,
-  li {
-    margin-left: 20px;
-    padding-left: 20px;
-  }
+
 }
 
 /* Project */
@@ -1142,7 +1139,11 @@ background-color: #fff;
 }
 
 
-
+#abt_content ul,
+li {
+  margin-left: 20px;
+  padding-left: 20px;
+}
 
 
 .project-column {
