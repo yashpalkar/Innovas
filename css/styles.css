@@ -440,8 +440,9 @@ p {
   .nav-collapse ul ul a {
     display: none;
   }
-}
 
+  
+}
 
 /* ------------------------------------------
   NAV TOGGLE STYLES
@@ -1128,11 +1129,7 @@ background-color: #fff;
     height: 100%;
   }
 
-  #abt_content ul,
-  li {
-    margin-left: 20px;
-    padding-left: 20px;
-  }
+
 }
 
 /* Project */
@@ -1142,7 +1139,11 @@ background-color: #fff;
 }
 
 
-
+#abt_content ul,
+li {
+  margin-left: 20px;
+  padding-left: 20px;
+}
 
 
 .project-column {
