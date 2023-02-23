@@ -534,7 +534,7 @@ p {
 }
 
 #about_div {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/img/construction-1.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/img/product_background.png');
   margin: 10px 00px 0 30px;
   text-align: center justify;
   font-weight: 600;
