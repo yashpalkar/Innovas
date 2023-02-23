@@ -58,11 +58,12 @@
     text-decoration:none;
 
       position:absolute;
-      top: 0;
+      top: 70px;
       right: 0;
-  
 
-
+}
+.close{
+  color: #333;
 }
 
 .popup-content a.close:hover{
@@ -99,8 +100,6 @@
   margin: 10px;
   
 }
-
-
 
 
 
