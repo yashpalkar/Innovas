@@ -189,7 +189,7 @@ body {
 
   0%,
   100% {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/img/homepage_3.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/img/homepage_3.png");
 
   }
 
@@ -198,11 +198,11 @@ body {
   }
 
   50% {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/img/construction-3.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/img/flooring_soln.jpg");
   }
 
   75% {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/img/homepage_3.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/img/cleanroom.png");
   }
 }
 
@@ -620,6 +620,9 @@ li {
     width: 90%;
     max-width: 1920px;
     margin: 0 auto;
+  }
+    #home_div{
+      width: 60%;
   }
 
 
