@@ -233,7 +233,7 @@ body {
 }
 #product{
   /* height: 100vh; */
-  color:#fff;
+  color:#33383b;
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/product_background.png'); */
 }
 
@@ -845,7 +845,7 @@ img {
 .content h5 {
   text-align: left;
   margin: 10px 0 0 40px;
-  color:rgb(234, 234, 234);
+  color:#33383b
 }
 
 .content ul {
