@@ -237,9 +237,7 @@ body {
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/product_background.png'); */
 }
 
-#wrap-product h2{
-  color:#fff;
-}
+
 #home_content h1 {
   margin-bottom: .5em;
 }
@@ -767,6 +765,14 @@ img.active {
   }
 }
 
+.content {
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* justify-content: center; */
+  /* line-height: 30px; */
+}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {
