@@ -98,3 +98,20 @@ function show_clean() {
       moreText.style.display = "inline";
     }
   }
+
+  function show_utility() {
+    var dots = document.getElementById("dots7");
+    var moreText = document.getElementById("more7");
+    var btnText = document.getElementById("myBtn7");
+    
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline"; 
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }
